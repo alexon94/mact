@@ -1,0 +1,22 @@
+# Исключаем ВСЁ в корне public_html
+/*
+
+# Возвращаем .gitignore и README
+!/.gitignore
+!/README.md
+
+# Возвращаем папку local_new, но исключаем всё её содержимое
+!/local_new/
+local_new/*
+
+# Возвращаем только git.php
+!local_new/git.php
+
+# Исключения по типам файлов
+**/*.log
+**/*.bak
+**/.DS_Store
+**/Thumbs.db
+
+# Файлы cookie-banner
+local_new/include/cookie-banner/counter.txt
